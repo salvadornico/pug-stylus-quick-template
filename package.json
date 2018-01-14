@@ -1,14 +1,16 @@
 {
 	"name": "pug-stylus-quick-template",
-	"version": "1.0",
+	"version": "1.0.0",
 	"description": "Nico's quick Pug & Stylus template",
 	"license": "MIT",
 	"scripts": {
 		"start": "npm-run-all --parallel parcel browser-sync",
 		"parcel": "parcel src/index.pug",
-		"browser-sync": "browser-sync start --proxy 'localhost:1234' --files 'src'"
+		"browser-sync":
+			"browser-sync start --proxy \"localhost:1234\" --files 'src'"
 	},
 	"devDependencies": {
+		"browser-sync": "^2.23.5",
 		"npm-run-all": "^4.1.2",
 		"parcel-bundler": "^1.4.1",
 		"parcel-plugin-pug": "^0.2.4",
